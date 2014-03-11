@@ -1,0 +1,18 @@
+.home-template {
+    padding:0;
+    margin:0;
+}
+.site-head-content {
+    padding:0;
+    margin:0;
+}
+.site-head {
+    width:100%;
+    position:absolute;
+    top:50%;
+    margin-top: -160px;
+}
+.vertical {
+    width: 900px;
+    margin: auto;
+}
