@@ -64,12 +64,12 @@ body, html {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 0 2rem 0; }
+    padding: 1rem 2rem 0; }
     @media only screen and (min-width: 800px) {
       .site-head-content .right {
         width: 66%;
         text-align: left;
-        padding-left: 2rem; } }
+        padding: 0 0 0 2rem; } }
   .site-head-content .blog-logo {
     width: 6.85353rem;
     height: 6.85353rem;
@@ -92,7 +92,7 @@ body, html {
     position: absolute;
     top: 0;
     right: 50%;
-    margin-right: -7.39267rem;
+    margin-right: -6.39267rem;
     border-radius: 50%;
     z-index: 98;
     background-size: cover;

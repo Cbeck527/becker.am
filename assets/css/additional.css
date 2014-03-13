@@ -10,9 +10,14 @@
     width:100%;
     position:absolute;
     top:50%;
-    margin-top: -160px;
+    margin-top: -222px;
 }
 .vertical {
     width: 900px;
     margin: auto;
+}
+@media only screen and (max-width: 800px)  {
+    .vertical { 
+      width:100%;
+    }
 }
