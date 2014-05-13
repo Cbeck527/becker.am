@@ -4,7 +4,7 @@ title: "About Me"
 header_image: "/images/chrisbecker_full.jpg"
 ---
 
-# About Me
+## Hey There
 
 I'm currently an Infrastructure Engineer at Warby Parker, an eyewear company transforming the industry.
 

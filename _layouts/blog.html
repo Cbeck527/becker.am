@@ -2,73 +2,25 @@
 layout: base
 ---
 
-<header class="site-head">
-    <div class="vertical">
-        <div class="site-head-content inner">
-            <div class="left">
-                {{#if @blog.logo}}<div class="blog-logo" style="background-image: url({{@blog.logo}})">Blog Logo</div>{{/if}}
-                {{#if @blog.cover}}<div class="blog-cover" style="background-image: url({{@blog.cover}})">Blog Cover Image</div>{{/if}}
-            </div>
-            <div class="right">
-                <h1 class="blog-title">{{ site.title }}</h1>
-                <div class="blog-social">
-                    <a href="http://www.twitter.com/starburst1977"><i class="fa fa-twitter"></i></a>
-                    <a href="http://dribbble.com/Starburst1977"><i class="fa fa-dribbble"></i></a>
-                    <a href="https://github.com/starburst1977"><i class="fa fa-github"></i></a>
-                    <a href="http://www.linkedin.com/in/svenread"><i class="fa fa-linkedin"></i></a>
-                </div>
-                <h2 class="blog-description">{{ site.description }}</h2>
-                <div class="head-links">
-                    <a href="/about">About me</a> · <a href="/marisa/">Marisa</a> · <a href="/chiara/">Chiara</a> · <a href="/readium-ghost-theme/">Readium</a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-</header>
+{% include header.html %}
 
-{{! The main content area on the homepage }}
 <main class="content index" role="main">
-    {{! Each post will be output using this markup }}
     
     <h5 class="index-headline featured"><span>&#9733;</span></h5>
     
-    {{#foreach posts}}
-        {{#if featured}}
-            <article class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+    {% for post in site.posts %}
+    <article class="post featured" itemscope role="article">
                 <div class="article-item">
                     <header class="post-header">
-                        <h2 class="post-title" itemprop="name"><a href="{{url}}" itemprop="url">{{{title}}}</a></h2>
-                        <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
+                        <h2 class="post-title" itemprop="name"><a href="{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+                        <span class="post-meta"><time datetime="{{ post.date YYYY-MM-DD }}">{{ post.date YYYY-MM-DD }}</time> {{tags prefix="on "}}</span>
                     </header>
                     <section class="post-excerpt" itemprop="description">
-                        <p>{{excerpt characters="250"}}&hellip;</p>
+                        <p>{{ post.excerpt }}&hellip;</p>
                     </section>
                 </div>
             </article>
-        {{/if}}
-    {{/foreach}}
-    
-    <h5 class="index-headline normal"><span>Blog articles&nbsp;&nbsp;·&nbsp;&nbsp;{{pagination}}</span></h5>
-    
-    <div class="cf frame">
-    {{#foreach posts}}
-        {{#if featured}}
-        {{else}}
-            <article class="{{post_class}}" itemscope itemtype="http://schema.org/BlogPosting" role="article">
-                <div class="article-item">
-                    <header class="post-header">
-                        <h2 class="post-title" itemprop="name"><a href="{{url}}" itemprop="url">{{{title}}}</a></h2>
-                        <span class="post-meta"><time datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMM YYYY"}}</time> {{tags prefix="on "}}</span>
-                    </header>
-                    <section class="post-excerpt" itemprop="description">
-                        <p>{{excerpt characters="250"}}&hellip;</p>
-                    </section>
-                </div>
-            </article>
-        {{/if}}
-    {{/foreach}}
-    </div>
+    {% endfor %}
     
     <h5 class="index-headline bottom"><span>{{pagination}}</span></h5>
     

@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>{{ title }}</title>
+    <title>{{ page.title }}</title>
     <meta name="description" content="{{meta_description}}" />
 
     <!-- (1) Optimize for mobile versions: http://goo.gl/EOpFl -->
@@ -42,17 +42,16 @@
 
     {{ content }}
 
+    {% if page.has_no_footer == 'true' %}
+    {% else %}
     <footer class="site-footer">
         <div class="inner">
-            {% if footer %}
-             <section class="copyright">All content copyright <a href="{{ url }}/">{{ title }}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
-            {% endif %}
+            <section class="copyright">All content copyright <a href="{{ url }}/">{{ title }}</a> &copy; {{date format="YYYY"}} &bull; All rights reserved.</section>
         </div>
     </footer>
-
+    {% endif %}
     <script type="text/javascript" src="/js/jquery.fitvids.js"></script>
     <script src="/js/highlight.pack.js"></script>
-    <script src="/js/readingTime.min.js"></script>
     <script type="text/javascript" src="/js/min/index-ck.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
 </body>
