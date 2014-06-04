@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "New Yok on an Old Medium"
+title:  "New York on an Old Medium"
 date:   2014-03-26
 header_image: "/images/headers/2014-05-08-code.jpg"
 ---
