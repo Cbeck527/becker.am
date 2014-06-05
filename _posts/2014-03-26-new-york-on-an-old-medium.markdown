@@ -2,7 +2,7 @@
 layout: post
 title:  "New York on an Old Medium"
 date:   2014-03-26
-header_image: "/images/headers/2014-05-08-code.jpg"
+header_image: "/images/headers/2014-03-26-new-york-on-an-old-medium.jpg"
 ---
 
 In the past two months I’ve shot almost everything on film. I really have no idea why, but I find myself drawn to the medium. There’s something about the challenge that keeps me coming back; it’s so much harder to get a good shot. I use a fully manual Canon New F-1 which was originally released in 1981. I bought it used online and fell in love with it as soon as I heard that first manual shutter click. The F-1 is fully functional without a battery, though you can put one in to activate the light meter. It’s pretty badass.

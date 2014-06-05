@@ -2,7 +2,7 @@
 layout: post
 title:  "Syracuse Moments on Film"
 date:   2014-03-11
-header_image: "/images/headers/2014-05-08-code.jpg"
+header_image: "/images/headers/2014-03-11-syracuse-on-film.jpg"
 ---
 
 
