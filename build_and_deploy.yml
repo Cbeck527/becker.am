@@ -1,0 +1,14 @@
+---
+
+- name: build becker.am and deploy to web
+  hosts: local
+  connection: local
+  tasks:
+    - name: build site using jekyll
+      command: jekyll build
+
+- name: deploy to web server
+  hosts: web
+  tasks:
+    - name: rsync local _site folder to web
+      synchronize: src=_site dest=/var/www/becker.am/pub

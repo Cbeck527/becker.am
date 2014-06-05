@@ -17,3 +17,4 @@ full_me_image: "/images/chrisbecker_long.jpg"
 # Build settings
 markdown: kramdown
 permalinks: pretty
+source: src
