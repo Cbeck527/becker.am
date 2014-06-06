@@ -1,0 +1,20 @@
+# Site settings
+name: Becker.am
+my_name: Chris Becker
+title: Chris Becker
+email: chris@becker.am
+description: "Infrastructure Engineer at Warby Parker and a lover of all things photography and bike related. NYC."
+baseurl: ""
+url: "http://becker.am"
+blog_image_url: "/images/blog/"
+
+me_image: "/images/chrisbecker.jpg"
+about_me_image: "/images/chrisbecker_long.jpg"
+full_me_image: "/images/chrisbecker_long.jpg"
+
+
+
+# Build settings
+markdown: kramdown
+permalinks: pretty
+source: src
