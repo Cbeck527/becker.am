@@ -8,7 +8,7 @@
       command: jekyll build
 
     - name: rsync _site directory
-      shell: rsync --archive --progress --delete --verbose _site/ chris@becker.am:/var/www/becker.am/pub
+      shell: rsync --archive --progress --delete --verbose _site/ {{ rsync_host }}:{{ becker_am_web_root }}
 
     - name: clean up _site directory in the repo
       file: name=_site state=absent
