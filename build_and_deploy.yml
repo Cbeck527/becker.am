@@ -7,8 +7,8 @@
     - name: build site using jekyll
       command: jekyll build
 
-- name: deploy to web server
-  hosts: web
-  tasks:
-    - name: rsync local _site folder to web
-      synchronize: src=_site dest=/var/www/becker.am/pub
+    - name: rsync _site directory
+      shell: rsync --archive --progress --delete --verbose _site/ chris@becker.am:/var/www/becker.am/pub
+
+    - name: clean up _site directory in the repo
+      file: name=_site state=absent
