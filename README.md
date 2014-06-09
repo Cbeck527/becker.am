@@ -5,7 +5,10 @@ My personal website, built with jekyll. Heavily based on [Sven Read's](http://ww
 
 I decided to simplify my site by having all of the content written in markdown and all of the resulting files be static HTML. It seemed silly to run something like Koken or Ghost for simple webpages. Plus, having your site on github is serious haxx0r points, yo.
 
+
 ## Building your own copy
+
+[![Build Status](https://travis-ci.org/Cbeck527/becker.am.svg?branch=master)](https://travis-ci.org/Cbeck527/becker.am)
 
 It's pretty easy to build a copy of my site. I used [jekyll](http://jekyllrb.com/) which is a ruby program that compiles markdown files into static HTML documents which makes it super easy to put on the web.
 
