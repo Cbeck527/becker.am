@@ -16,5 +16,5 @@ full_me_image: "/images/chrisbecker_long.jpg"
 
 # Build settings
 markdown: kramdown
-permalinks: pretty
+permalink: /blog/:year/:month/:day/:title/
 source: src
