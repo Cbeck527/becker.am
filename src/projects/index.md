@@ -3,6 +3,16 @@ layout: page_no_header
 title: "projects"
 ---
 
+## Is My Train Fucked?
+
+![](ismytrainfucked.png)
+A silly python site that scrapes the New York City MTA API and displays whether or not your train line is fucked. Hint: it probably is.
+
+[ismytrainfucked.com](http://ismytrainfucked.com)
+(Python, Flask) - [source code on github](https://github.com/Cbeck527/is-my-train-fucked)
+
+<hr />
+
 ## The Wandering Photographers
 
 ![](Screen_Shot_2014_05_01_at_11_25_51_PM.png)
@@ -19,7 +29,7 @@ The Wandering Photographers is a photo blog started by myself, Emily Shearing, a
 This tiny (and silly) site lets you quickly see what a color looks like without loading an annoying color picker or launching Photoshop.
 
 [whatsthiscolor.com](http://whatsthiscolor.com)
-(Python, [Flask](http://flask.pocoo.org/))
+(Python, [Flask](http://flask.pocoo.org/)) - [source code on github](https://github.com/Cbeck527/whats-this-color)
 
 <hr />
 
