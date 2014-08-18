@@ -3,7 +3,7 @@ layout: page_no_header
 title: "photography"
 ---
 
-![](_MG_1330.jpg)
+![](MG_1330.jpg)
 
 ![](MG_6372-1.jpg)
 
