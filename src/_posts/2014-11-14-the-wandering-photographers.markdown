@@ -34,5 +34,7 @@ I cannot wait to see your images.
 
 [http://thewanderingphotographers.com/](http://thewanderingphotographers.com/)
 
+Source code [on GitHub](https://github.com/Cbeck527/the-wandering-photographers)
+
 *To get started, and add your image, I've wrote a quick guide in the
 [README](https://github.com/Cbeck527/the-wandering-photographers#building-your-own-copy)*
