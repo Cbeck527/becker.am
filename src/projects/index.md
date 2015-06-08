@@ -3,6 +3,15 @@ layout: page_no_header
 title: "projects"
 ---
 
+## Bootstrap
+
+![](bootstrap.png)
+My quick way to whip new computers into shape.
+
+(Shell, Ansible) - [source code on github](https://github.com/Cbeck527/bootstrap)
+
+<hr />
+
 ## Is My Train Fucked?
 
 ![](ismytrainfucked.png)
