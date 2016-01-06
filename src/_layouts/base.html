@@ -19,16 +19,19 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.content | striphtml | truncatewords: 20 }}">
+    <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 20 }}">
     <meta name="twitter:site" content="http://becker.am">
     <meta name="twitter:creator" content="@cbeck527">
     <meta name="google-site-verification" content="">
     <meta property="fb:admins" content="">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.content | striphtml | truncatewords: 20 }}">
+    <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 20 }}">
 
     <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="/images/favicon/favicon-152.png">
+    <meta name="msapplication-TileImage" content="/images/favicon/favicon-144.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
 
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="stylesheet" href="/js/styles/obsidian.css">

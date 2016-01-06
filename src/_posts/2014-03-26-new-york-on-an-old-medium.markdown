@@ -11,14 +11,14 @@ So naturally when my good friend [Sam](http://blog.samthecobra.com) asked me if 
 
 I went in thinking that roll would last a day, but it ended up lasting three months. Out of the 36 exposures on the roll, I liked six. Gotta love film.
 
-![]({{ site.blog_image_url }}/908224390.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/908224390.jpg)
 
-![]({{ site.blog_image_url }}/908225087.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/908225087.jpg)
 
-![]({{ site.blog_image_url }}/908225553.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/908225553.jpg)
 
-![]({{ site.blog_image_url }}/908228021.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/908228021.jpg)
 
-![]({{ site.blog_image_url }}/908226240.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/908226240.jpg)
 
-![]({{ site.blog_image_url }}/908228435.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/908228435.jpg)

@@ -21,22 +21,22 @@ But it's also the best thing.
 
 By the time I received the negatives, I have entirely forgotten about them. But as soon as I take a look, I can instantly remember the moment; the instant that the shutter went *click*.
 
-![]({{ site.blog_image_url }}/897332185.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332185.jpg)
 
-![]({{ site.blog_image_url }}/897332215.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332215.jpg)
 
-![]({{ site.blog_image_url }}/897332221.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332221.jpg)
 
-![]({{ site.blog_image_url }}/897332279.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332279.jpg)
 
-![]({{ site.blog_image_url }}/897332320.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332320.jpg)
 
-![]({{ site.blog_image_url }}/897332344.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332344.jpg)
 
-![]({{ site.blog_image_url }}/897332355.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332355.jpg)
 
-![]({{ site.blog_image_url }}/897332374.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332374.jpg)
 
-![]({{ site.blog_image_url }}/897332408.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332408.jpg)
 
-![]({{ site.blog_image_url }}/897332422.jpg)
+![{{ site.title }}]({{ site.blog_image_url }}/897332422.jpg)

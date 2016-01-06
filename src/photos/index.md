@@ -3,20 +3,20 @@ layout: page_no_header
 title: "photography"
 ---
 
-![](MG_1330.jpg)
+![Chelsea](MG_1330.jpg)
 
-![](MG_6372-1.jpg)
+![Vines Syracuse University](MG_6372-1.jpg)
 
-![](MG_6238.jpg)
+![Sam](MG_6238.jpg)
 
-![](MG_5236.jpg)
+![Fixie](MG_5236.jpg)
 
-![](MG_0118.jpg)
+![South Street Seaport](MG_0118.jpg)
 
-![](MG_6712.jpg)
+![Ithaca](MG_6712.jpg)
 
-![](MG_7767.jpg)
+![Ted](MG_7767.jpg)
 
-![](MG_3328.jpg)
+![On NJTransit](MG_3328.jpg)
 
-![](MG_1184.jpg)
+![Valley Forge](MG_1184.jpg)
