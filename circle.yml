@@ -9,5 +9,5 @@ machine:
 
 test:
   override:
-    - jekyll build
-    - htmlproof ./_site/
+    - bundle exec jekyll build
+    - bundle exec htmlproof ./_site/ --disable-external
