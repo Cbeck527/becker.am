@@ -1,0 +1,13 @@
+machine:
+  ruby:
+    version: ruby-2.2.3
+
+# SOON :D
+# general:
+#   artifacts:
+#     - "./_site"
+
+test:
+  override:
+    - jekyll build
+    - htmlproof ./_site/
