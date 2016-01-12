@@ -13,6 +13,20 @@ Say (possibly mean) things with a cute rabbit.
 
 <hr />
 
+## ControlC
+
+![ControlC](controlc.png)
+A podcast where myself and my good friend Jeff Uthaichai talk about tech, beer
+and more. Find us on [iTunes](https://itunes.apple.com/us/podcast/control-c/id976429134?mt=2)
+or any other podcast client!
+
+[controlc.fm](http://controlc.fm)
+(Logic Pro X) - [site source code on github](https://github.com/Cbeck527/controlc.fm)
+
+<hr />
+
+<!-- Coming soon, thanks for peeking at the source :)
+
 ## Bootstrap
 
 ![Bootstrap](bootstrap.png)
@@ -21,6 +35,8 @@ My quick way to whip new computers into shape.
 (Shell, Ansible) - [source code on github](https://github.com/Cbeck527/bootstrap)
 
 <hr />
+
+-->
 
 ## Is My Train Fucked?
 
