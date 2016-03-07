@@ -8,11 +8,11 @@ colleagues.
 
 ### Warby Parker Lightning Talk - Decision Fatigue
 
-[![Decision Fatigue](decision_fatigue.png)](decision_fatigue.pdf)
+[![Decision Fatigue](decision_fatigue.png)]({{ site.url }}/talks/decision_fatigue.pdf)
 
 ### Warby Parker Software Guild Talk - Serverless Services
 
-[![Serverless Services](serverless_services.png)](serverless_services.pdf)
+[![Serverless Services](serverless_services.png)]({{ site.url }}/talks/serverless_services.pdf)
 
 ### PyCon 2015 - Docker containers in the cloud: Provider Deathmatch
 
