@@ -180,7 +180,6 @@ body, html
   height: modular-scale(1rem, 0, 1.33)
   position: relative
   font-weight: 300
-  margin: golden-ratio(1rem,  2) 0 0
   padding: 0
   &.bottom
     margin: golden-ratio(1rem, 1) 0 golden-ratio(1rem, 2)
@@ -461,15 +460,10 @@ body, html
       padding: 0 0 modular-scale(1rem, 2, 1.33)
       margin: 0
     code
-      background-color: $color-black
-      color: #fff
-      border-color: $color-black
       font-family: Inconsolata, monospace, sans-serif
-      font-size: modular-scale(1rem, 0, 1.33)
+      font-size: modular-scale(1rem, 1, 1.33)
       border-radius: golden-ratio(1rem,  -2)
       padding: 2px 4px 4px
-      position: relative
-      top: -3px
       white-space: nowrap
       -webkit-hyphens: none
       -moz-hyphens: none
@@ -504,6 +498,7 @@ body, html
       margin: modular-scale(1rem, 1, 1.33) auto modular-scale(1rem, 1, 1.33) auto
       border: 1px solid #ccc
     ul, ol
+      font-weight: 300
       padding: 0 0 modular-scale(1rem, 2, 1.33)
       margin: 0
       li
