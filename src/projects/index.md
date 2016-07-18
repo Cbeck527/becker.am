@@ -3,6 +3,16 @@ layout: page_no_header
 title: "projects"
 ---
 
+## Dishes.io
+
+![Dishes.io](dishes.png)
+Use Alexa to keep track of your dishwasher.
+
+[dishes.io](http://dishes.io)
+(Python) - [source code on github](https://github.com/Cbeck527/the_dishwasher)
+
+<hr />
+
 ## RabbitSay
 
 ![RabbitSay](rabbitsay.png)
@@ -65,19 +75,4 @@ This tiny (and silly) site lets you quickly see what a color looks like without 
 
 [whatsthiscolor.com](http://whatsthiscolor.com)
 (Python, [Flask](http://flask.pocoo.org/)) - [source code on github](https://github.com/Cbeck527/whats-this-color)
-
-<hr />
-
-## ETI Time Card System
-![ETI Time Card System](ETI_Time_Card_System.png)
-The ETI Time Card system was designed and developed by myself and Ted Rysz as our senior capstone project. This system helps employees of [EmpTech](http://emptech.org/) log their time to accurately report their hours out in the field.
-
-(Python, [django](https://www.djangoproject.com/))
-
-<hr />
-
-## Sleep Calculator for iOS
-![Sleep Calculator for iOS](SleepyTime_iOS.png)
-My first attempt at iOS development, inspired by [sleepyti.me](http://sleepyti.me)
-
-(Objective-C, iOS)
+Objective-C, iOS)
