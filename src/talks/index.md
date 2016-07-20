@@ -3,8 +3,9 @@ layout: page_no_header
 title: "talks"
 ---
 
-Over the past few months I have had a few speaking gigs by myself and with other
-colleagues.
+### Amazon Alexa Meetup - The Dishwasher App
+
+[![The Dishwasher App](dishwasher_alexa_meetup.png)]({{ site.url }}/talks/dishwasher_alexa_meetup.pdf)
 
 ### Warby Parker Lightning Talk - Decision Fatigue
 
