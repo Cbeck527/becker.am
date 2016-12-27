@@ -54,7 +54,7 @@ My quick way to whip new computers into shape.
 A silly python site that scrapes the New York City MTA API and displays whether or not your train line is fucked. Hint: it probably is.
 
 [ismytrainfucked.com](http://ismytrainfucked.com)
-(Python, Flask) - [source code on github](https://github.com/Cbeck527/is-my-train-fucked)
+(Python, AWS Lambda) - [source code on github](https://github.com/Cbeck527/is-my-train-fucked)
 
 <hr />
 
@@ -75,4 +75,3 @@ This tiny (and silly) site lets you quickly see what a color looks like without 
 
 [whatsthiscolor.com](http://whatsthiscolor.com)
 (Python, [Flask](http://flask.pocoo.org/)) - [source code on github](https://github.com/Cbeck527/whats-this-color)
-Objective-C, iOS)

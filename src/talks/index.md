@@ -9,9 +9,8 @@ title: "talks"
 
 I
 [presented](https://github.com/hackandtell/wrapup/blob/master/nyc/round-38-wrapup.md#chris-becker---is-my-train-fucked) at
-one of my favorite
-meetups, [Hack && Tell](https://www.meetup.com/hack-and-tell/) about my tiny
-app [IsMyTrainFucked](http://ismytrainfucked.com)
+[Hack && Tell](https://www.meetup.com/hack-and-tell/), one of my favorite
+meetups, about my tiny app [IsMyTrainFucked](http://ismytrainfucked.com)
 
 
 ### Amazon Alexa Meetup - The Dishwasher App
