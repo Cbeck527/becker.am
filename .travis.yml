@@ -7,7 +7,7 @@ install: bundle install
 
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer ./_site
+  - bundle exec htmlproofer --http-status-ignore "999" ./_site # Ignoring HTTP 999 because LinkedIn is silly
 
 env:
   global:
