@@ -3,6 +3,9 @@ layout: page_no_header
 title: "photography"
 ---
 
+For my 25th year alive on this planet, I'm working on
+a [365 project](https://365.becker.am) entirely on film.
+
 ![Chelsea](MG_1330.jpg)
 
 ![Vines Syracuse University](MG_6372-1.jpg)
