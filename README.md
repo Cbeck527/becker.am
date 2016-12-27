@@ -13,7 +13,7 @@ serious haxx0r points, yo.
 
 ## Building your own copy
 
-[![Circle CI](https://circleci.com/gh/Cbeck527/becker.am.svg?style=svg)](https://circleci.com/gh/Cbeck527/becker.am)
+[![Build Status](https://travis-ci.org/Cbeck527/becker.am.svg?branch=master)](https://travis-ci.org/Cbeck527/becker.am)
 
 It's pretty easy to build a copy of my site. I used
 [jekyll](http://jekyllrb.com/) which is a ruby program that compiles markdown
