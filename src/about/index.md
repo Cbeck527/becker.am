@@ -15,7 +15,7 @@ and dev tooling at Warby Parker.
 
 In my personal time, I enjoy [taking photos](https://365.becker.am),
 building [silly and profane apps](https://github.com/Cbeck527), and
-giving [talks]({{ site.url }}/talks/) at local meetups.
+giving [talks](/talks/) at local meetups.
 
 I enjoy working on passionate teams and breathing life into wacky ideas. I love
 to combine technical and creative minds to see what can be built.

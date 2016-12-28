@@ -5,6 +5,7 @@ rvm:
 
 install: bundle install
 
+# before we build we have to add the appropriate $ENV to the _config.yml
 script:
   - bundle exec jekyll build
   - bundle exec htmlproofer --http-status-ignore "999" ./_site # Ignoring HTTP 999 because LinkedIn is silly
@@ -15,3 +16,19 @@ env:
 
 # use container infrastructure on travis
 sudo: false
+
+before_deploy:
+  - mv s3_website.yml.example s3_website.yml
+# deploy to dev bucket on all branches, master goes to prod
+# TODO: setup prod bucket
+deploy:
+  # - provider: script
+  #   skip_cleanup: true
+  #   script: 'ENV="www" deploy/deploy.sh'
+  #   on:
+  #     branch: master
+  - provider: script
+    skip_cleanup: true
+    script: 'ENV="dev" deploy/deploy.sh'
+    on:
+      all_branches: true
