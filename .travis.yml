@@ -8,7 +8,7 @@ install: bundle install
 # before we build we have to add the appropriate $ENV to the _config.yml
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer --http-status-ignore "999" ./_site # Ignoring HTTP 999 because LinkedIn is silly
+  - bundle exec htmlproofer --disable-external ./_site # Ignoring HTTP 999 because LinkedIn is silly
 
 env:
   global:
