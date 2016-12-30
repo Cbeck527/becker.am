@@ -5,7 +5,7 @@ title: "talks"
 
 ### Hack && Tell - IsMyTrainFucked.com
 
-[![Is My Train Fucked?](is_my_train_fucked.png)]({{ site.url }}/talks/is_my_train_fucked.pdf)
+[![Is My Train Fucked?](is_my_train_fucked.png)](/talks/is_my_train_fucked.pdf)
 
 I
 [presented](https://github.com/hackandtell/wrapup/blob/master/nyc/round-38-wrapup.md#chris-becker---is-my-train-fucked) at
@@ -15,15 +15,15 @@ meetups, about my tiny app [IsMyTrainFucked](http://ismytrainfucked.com)
 
 ### Amazon Alexa Meetup - The Dishwasher App
 
-[![The Dishwasher App](dishwasher_alexa_meetup.png)]({{ site.url }}/talks/dishwasher_alexa_meetup.pdf)
+[![The Dishwasher App](dishwasher_alexa_meetup.png)](/talks/dishwasher_alexa_meetup.pdf)
 
 ### Warby Parker Lightning Talk - Decision Fatigue
 
-[![Decision Fatigue](decision_fatigue.png)]({{ site.url }}/talks/decision_fatigue.pdf)
+[![Decision Fatigue](decision_fatigue.png)](/talks/decision_fatigue.pdf)
 
 ### Warby Parker Software Guild Talk - Serverless Services
 
-[![Serverless Services](serverless_services.png)]({{ site.url }}/talks/serverless_services.pdf)
+[![Serverless Services](serverless_services.png)](/talks/serverless_services.pdf)
 
 ### PyCon 2015 - Docker containers in the cloud: Provider Deathmatch
 
