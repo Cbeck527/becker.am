@@ -19,14 +19,21 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="{{ page.title }}">
-    <meta name="twitter:description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 20 }}">
-    <meta name="twitter:site" content="http://becker.am">
     <meta name="twitter:creator" content="@cbeck527">
-    <meta name="google-site-verification" content="">
-    <meta property="fb:admins" content="">
     <meta property="og:type" content="article">
     <meta property="og:title" content="{{ page.title }}">
-    <meta property="og:description" content="{{ page.content | strip_html | strip_newlines | truncatewords: 20 }}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}" property="og:description">
+    <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
+
+    {% if page.header_image %}
+    <meta content="{{ site.url }}/{{ page.header_image }}" property="og:image">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}/{{ page.header_image }}">
+    {% else %}
+    <meta content="{{ site.url }}/images/chrisbecker.jpg" property="og:image">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="{{ site.url }}/images/chrisbecker.jpg">
+    {% endif %}
 
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="/images/favicon/favicon-152.png">
