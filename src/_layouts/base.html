@@ -26,13 +26,13 @@
     <meta name="twitter:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}{% else %}{{ site.description }}{% endif %}">
 
     {% if page.header_image %}
-    <meta content="{{ site.url }}/{{ page.header_image }}" property="og:image">
+    <meta content="/{{ page.header_image }}" property="og:image">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="{{ site.url }}/{{ page.header_image }}">
+    <meta name="twitter:image" content="/{{ page.header_image }}">
     {% else %}
-    <meta content="{{ site.url }}/images/chrisbecker.jpg" property="og:image">
+    <meta content="/images/chrisbecker.jpg" property="og:image">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:image" content="{{ site.url }}/images/chrisbecker.jpg">
+    <meta name="twitter:image" content="/images/chrisbecker.jpg">
     {% endif %}
 
     <link rel="shortcut icon" href="/favicon.ico">
