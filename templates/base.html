@@ -7,28 +7,10 @@
         <meta name="viewport" content="width=device-width">
         <link rel="canonical" href="{{ CURRENT_PAGE.absolute_final_url }}" />
         <link rel="stylesheet" href="{% static '/static/css/reset.css' %}">
-        <style>
-         @font-face {
-             font-family: "league-mono";
-             src: url("{% static '/static/font/LeagueMono-Medium.woff2' %}") format('woff');
-         }
-         body {
-             padding: 0 20px;
-             width: 600px;
-             font-family: league-mono, monospace;
-         }
-         img{max-width: 100%;}
-         li{list-style:none; padding: 5px 0;}
-         h1{padding: 20px 0;}
-         p{padding: 20px 0;width: 600px;}
-         a{color:blue;text-decoration: none;}
-        </style>
+        <link rel="stylesheet" href="{% static '/static/css/style.css' %}">
     </head>
-
-    <body>
-
+    <body class="container">
     {% block body %}
     {% endblock %}
-
     </body>
 </html>
