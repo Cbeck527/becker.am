@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block body %}
+<h1>Projects, stuff, etc.</h1>
+
+<p>Given enough time and coffee, software appears.</p>
+
+<ul>
+    <li>
+        <h2>Is My Train Fucked</h2>
+        <p>
+            <a href="http://ismytrainfucked.com">ismytrainfucked.com</a>
+            <br>
+            Python, Lambda, S3
+        </p>
+        <img src="{% static '/static/stuff/ismytrainfucked.png' %}" alt="IsMyTrainFucked.com" />
+    </li>
+    <hr>
+    <li>
+        <h2>RabbitSay</h2>
+        <p><a href=""></a></p>
+        <p>Python</p>
+        <img src="{% static '/static/stuff/rabbitsay.png' %}" alt="Github/Cbeck527/rabbitsay" />
+    </li>
+    <hr>
+    <li>
+        <h2>Dishes.io</h2>
+        <p><a href=""></a></p>
+        <p>Python, AWS Alexa</p>
+        <img src="{% static '/static/stuff/dishes.png' %}" alt="Dishes.io" />
+    </li>
+    <hr>
+    <li>
+        <h2>ControlC.fm</h2>
+        <p><a href=""></a></p>
+        <p>Logic Pro X</p>
+        <img src="{% static '/static/stuff/controlc.png' %}" alt="ControlC.fm" /></li>
+</ul>
+{% endblock %}
