@@ -1,0 +1,11 @@
+sudo: false 
+dist: trusty
+language: python
+python:
+  - "2.7"
+before_install:
+  - pip install virtualenv
+install:
+  - make
+script:
+  - make site

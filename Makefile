@@ -21,4 +21,4 @@ venv/bin/activate:
 site: .build/index.html cactus
 
 .build/index.html:
-	cactus build
+	venv/bin/cactus build
