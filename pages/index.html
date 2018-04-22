@@ -2,10 +2,11 @@
 
 {% block body %}
 <h1>Chris Becker</h1>
-<p>🖥 SRE at Betterment</p>
-<p>📸 Photographer</p>
-<p>🚲 Bikes, mopeds, cycling</p>
-<p>📍 PHL/NYC</p>
+<p class="homepage">🖥 SRE at Betterment</p>
+<p class="homepage">📸 Photographer</p>
+<p class="homepage">🚲 Bikes, mopeds, cycling</p>
+<p class="homepage">🌱 Indoor plant enthusiast</p>
+<p class="homepage">📍 PHL/NYC</p>
 <ul>
     <li><a href="/about">About</a></li>
     <li><a href="/blog">Blog</a></li>
@@ -14,4 +15,5 @@
     <li><a href="/blabbing">Talks</a></li>
     <li><a href="mailto:chris@becker.am">Email Me</a></li>
 </ul>
+<img class="homepage" src="{% static '/static/img/mebw.jpg' %}" alt="it me" />
 {% endblock %}

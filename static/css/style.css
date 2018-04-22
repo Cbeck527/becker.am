@@ -114,3 +114,8 @@ li {
 a {
     color:blue;
     text-decoration: none;}
+
+.homepage {
+    font-size:2rem;}
+img.homepage {
+    width: 50%}
