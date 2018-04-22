@@ -6,6 +6,7 @@ cactus: venv/bin/cactus
 
 clean:
 	rm -rf venv
+	rm -rf .build
 
 venv/bin/cactus: venv
 	venv/bin/pip install -U cactus
@@ -16,3 +17,8 @@ venv: venv/bin/activate
 venv/bin/activate:
 	test -d venv || $(PYTHON) -m virtualenv venv
 	@touch venv/bin/activate
+
+site: .build/index.html cactus
+
+.build/index.html:
+	cactus build
