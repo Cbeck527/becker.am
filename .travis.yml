@@ -1,34 +1,30 @@
-language: ruby
-
-rvm:
-  - 2.3.1
-
-install: bundle install
-
-# before we build we have to add the appropriate $ENV to the _config.yml
+sudo: false 
+dist: trusty
+language: python
+python:
+  - "2.7"
+before_install:
+  - pip install virtualenv
+install:
+  - make
 script:
-  - bundle exec jekyll build
-  - bundle exec htmlproofer --disable-external ./_site # Ignoring HTTP 999 because LinkedIn is silly
-
-env:
-  global:
-  - NOKOGIRI_USE_SYSTEM_LIBRARIES=true # speeds up installation of html-proofer
-
-# use container infrastructure on travis
-sudo: false
-
-before_deploy:
-  - mv s3_website.yml.example s3_website.yml
-# deploy to dev bucket on all branches, master goes to prod
-# TODO: setup prod bucket
+  - make site
 deploy:
-  # - provider: script
-  #   skip_cleanup: true
-  #   script: 'ENV="www" deploy/deploy.sh'
-  #   on:
-  #     branch: master
-  - provider: script
+  - provider: s3
+    access_key_id: $PROD_AWS_ACCESS_KEY_ID
+    secret_access_key: $PROD_AWS_SECRET_ACCESS_KEY
+    bucket: "www.becker.am"
     skip_cleanup: true
-    script: 'ENV="dev" deploy/deploy.sh'
+    region: "us-east-1"
+    local_dir: .build
+    on:
+      branch: master
+  - provider: s3
+    access_key_id: $DEV_AWS_ACCESS_KEY_ID
+    secret_access_key: $DEV_AWS_SECRET_ACCESS_KEY
+    bucket: "dev.becker.am"
+    skip_cleanup: true
+    region: "us-east-1"
+    local_dir: .build
     on:
       all_branches: true
