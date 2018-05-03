@@ -17,7 +17,7 @@
     width: 85%;
     padding: 0; }
   img.homepage {
-    width: 100%;}
+    width: 91%;}
   .homepage {
       font-size:2rem;}
 }
@@ -127,3 +127,25 @@ a {
     text-decoration: none;}
 img.homepage {
     padding-top: 2rem;}
+
+#box {
+    border-style: dashed;
+    border-color: black;
+    border-width: 2px;
+    margin-bottom: 2rem;}
+#box p:last-child {
+    margin-bottom: 1rem;}
+
+#navbox {
+    border-style: dashed;
+    border-color: blue;
+    border-width: 2px;
+    margin-bottom: 4rem;}
+#navbox ul {
+    margin-bottom:0}
+#navbox li:last-child {
+    margin-bottom:0}
+
+.box-content {
+    padding: 1rem;
+}

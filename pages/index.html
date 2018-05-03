@@ -2,6 +2,8 @@
 
 {% block body %}
 <img class="homepage" src="{% static '/static/img/mebw.jpg' %}" alt="it me" />
+<div id="box" >
+    <div class="box-content">
 <h1>Chris Becker</h1>
 <p class="homepage">🖥 SRE at Betterment</p>
 <p class="homepage">📸 Photographer</p>
@@ -9,6 +11,9 @@
 <p class="homepage">🌱 Indoor plant enthusiast</p>
 <p class="homepage">📍 PHL/NYC</p>
 <p class="homepage">🔐 70FA 7961 EA5F 66A9</p>
+</div>
+</div>
+<div id="navbox" class="box-content">
 <ul>
     <li><a href="/about">About</a></li>
     <!-- <li><a href="/blog">Blog</a></li> -->
@@ -17,4 +22,5 @@
     <li><a href="/blabbing">Talks</a></li>
     <li><a href="mailto:chris@becker.am">Email Me</a></li>
 </ul>
+</div>
 {% endblock %}
