@@ -1,38 +1,72 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset="utf-8" />
     <title>chris becker</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="canonical" href="https://www.becker.am/" />
-    <link rel="stylesheet" href="/static/css/reset.css" />
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta property="og:title" content="98.css" />
+    <meta name="Description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-  <body class="container">
-    <img class="homepage" src="/static/img/mebw.jpg" alt="it me" />
-    <div id="box">
-      <div class="box-content">
-        <h1>Chris Becker</h1>
-        <p class="homepage">
-          🖥 Infrastructure @ <a hre="https://ro.co">Ro</a>
-        </p>
-        <p class="homepage">📸 Photographer</p>
-        <p class="homepage">🐶 Dog dad</p>
-        <p class="homepage">🔧 Tinkerer</p>
-        <p class="homepage">📍 PHL</p>
-        <p class="homepage">🔐 70FA 7961 EA5F 66A9</p>
+  <body ontouchstart>
+    <main>
+      <div class="window fit">
+        <div class="title-bar">
+          <div class="title-bar-text">navigation.exe</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <ul>
+            <li><a href="/about">About</a></li>
+            <!-- TODO <li><a href="/blog">Blog</a></li> -->
+            <li><a href="/photos">Photography</a></li>
+            <li><a href="/stuff">Projects</a></li>
+            <li><a href="/blabbing">Talks</a></li>
+            <li><a href="mailto:chris@becker.am">Email Me</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div id="navbox" class="box-content">
-      <ul>
-        <li><a href="/about">About</a></li>
-        <!-- TODO <li><a href="/blog">Blog</a></li> -->
-        <li><a href="/photos">Photography</a></li>
-        <li><a href="/stuff">Projects</a></li>
-        <li><a href="/blabbing">Talks</a></li>
-        <li><a href="mailto:chris@becker.am">Email Me</a></li>
-      </ul>
-    </div>
+      <div class="window" id="cmd">
+        <div class="title-bar">
+          <div class="title-bar-text">Command Prompt</div>
+          <div class="title-bar-controls">
+            <button aria-label="Minimize"></button>
+            <button aria-label="Maximize"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <pre>
+Microsoft&#10094;R&#10095; Windows DOS
+&#10094;C&#10095; Copyright Microsoft Corp 1990-2001.
+            <br>C:&#92;WINDOWS&#92;SYSTEM32> CHRIS_BECKER_INFO.EXE
+ 🖥 Infrastructure @ Ro
+ 📸 Photographer
+ 🐶 Dog dad
+ 🔧 Tinkerer
+ 📍 PHL
+ 🔐 70FA 7961 EA5F 66A9
+          </pre>
+        </div>
+      </div>
+      <div class="window fit">
+        <div class="title-bar">
+          <div class="title-bar-text">chris-becker.jpeg</div>
+          <div class="title-bar-controls">
+            <button aria-label="Help"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body fit">
+          <img src="mebw.jpg" alt="Black and white picture of Chris Becker" />
+        </div>
+      </div>
+    </main>
   </body>
 </html>
