@@ -1,44 +1,100 @@
 <!doctype html>
 <html>
   <head>
+    <title>about - chris becker</title>
     <meta charset="utf-8" />
-    <title>chris becker</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="canonical" href="http://becker.am/about/" />
-    <link rel="stylesheet" href="/static/css/reset.css" />
-    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="canonical" href="https://www.becker.am/" />
+    <meta property="og:title" content="" />
+    <meta name="Description" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+    <link rel="stylesheet" href="https://unpkg.com/xp.css" />
+    <link rel="stylesheet" href="/style.css" />
   </head>
-  <body class="container">
-    <h1>Chris Becker</h1>
-    <img class="homepage" src="/static/img/me.jpg" />
-    <p>^^ shot on film 🎞</p>
-    <div id="box">
-      <div class="box-content">
-        <p>Hey There—</p>
-        <p>
-          I’m currently a Staff Infrastructure Engineer at
-          <a href="https://ro.co">Ro</a>.
-        </p>
-
-        <p>
-          After finishing my undergraduate degree at Syracuse University in 2013
-          I moved to New York City to start my career in technology. Currently
-          I’m a member of a small team that manages the development
-          infrastructure, cloud instances, and dev tooling at Ro.
-        </p>
-
-        <p>
-          In my personal time, I like to take photos, build silly and profane
-          apps, and give talks at local meetups.
-        </p>
-
-        <p>
-          I enjoy working on passionate teams and breathing life into wacky
-          ideas. I love to combine technical and creative minds to see what can
-          be built.
-        </p>
+  <body ontouchstart>
+    <main>
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">navigation.exe</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <!-- TODO <li><a href="/blog">Blog</a></li> -->
+            <li><a href="/about">About</a></li>
+            <li><a href="/photos">Photography</a></li>
+            <li><a href="/stuff">Projects</a></li>
+            <li><a href="/blabbing">Talks</a></li>
+            <li><a href="mailto:chris@becker.am">Email Me</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">chris_becker.gif</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body" id="wordart">
+          <img
+            class="medium"
+            src="cbwa.png"
+            alt="1998-style word art that says Chris Becker"
+          />
+        </div>
+      </div>
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">me.jpg</div>
+          <div class="title-bar-controls">
+            <button aria-label="Help"></button>
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <img
+            class="smaller"
+            src="me.jpg"
+            alt="Color photograph of Chris Becker taken on film"
+          />
+          <p>^^ shot on film 🎞</p>
+        </div>
+      </div>
+      <div class="window">
+        <div class="title-bar">
+          <div class="title-bar-text">bio.exe</div>
+          <div class="title-bar-controls">
+            <button aria-label="Close"></button>
+          </div>
+        </div>
+        <div class="window-body">
+          <p>Hey There—</p>
+          <p>
+            I’m currently a Staff Infrastructure Engineer at
+            <a href="https://ro.co">Ro</a>.
+          </p>
+          <p>
+            After finishing my undergraduate degree at Syracuse University in
+            2013 I moved to New York City to start my career in technology.
+            Currently I’m a member of a small team that manages the development
+            infrastructure, cloud instances, and dev tooling at Ro.
+          </p>
+          <p>
+            In my personal time, I like to take photos, build silly and profane
+            apps, and give talks at local meetups.
+          </p>
+          <p>
+            I enjoy working on passionate teams and breathing life into wacky
+            ideas. I love to combine technical and creative minds to see what
+            can be built.
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
