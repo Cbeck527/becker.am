@@ -13,10 +13,7 @@ body {
 }
 
 main {
-  width: 80%;
-  margin-left: 100px;
-  margin-top: 20px;
-  margin-bottom: 60px;
+  margin: 20px 200px;
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
@@ -64,4 +61,127 @@ img.full{
 
 #wordart {
   background: white;
+}
+
+/* Responsive */
+
+/* Tablet devices */
+@media screen and (max-width: 1024px) {
+  main {
+    margin: 20px 50px; /* Reduce margins on tablet */
+  }
+
+  img.medium {
+    width: 100%; /* Make medium images full width */
+    height: auto;
+  }
+
+  #cmd {
+    width: 100%; /* Make command window full width */
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  main {
+    margin: 10px; /* Minimal margins on mobile */
+    gap: 8px; /* Reduce gap between windows */
+  }
+
+  .window {
+    width: 100%; /* Make windows full width */
+  }
+
+  img.smaller {
+    width: 100%;
+    height: auto;
+  }
+
+  img.medium {
+    width: 100%;
+    height: auto;
+  }
+
+  img.large {
+    width: 100%;
+    height: auto;
+  }
+
+  p {
+    max-width: 100%; /* Allow text to fill width on mobile */
+  }
+
+  /* Adjust font sizes for better mobile reading */
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 8px 0;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+}
+
+/* Very small devices */
+@media screen and (max-width: 320px) {
+  main {
+    margin: 5px; /* Minimal margins on very small devices */
+  }
+
+  body {
+    font-size: 13px; /* Slightly smaller text */
+  }
+
+  .window {
+    min-width: auto; /* Override min-width for very small screens */
+  }
+}
+
+/* Handle landscape orientation on mobile */
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  main {
+    margin: 5px 10px;
+  }
+
+  .window {
+    width: calc(50% - 10px); /* Two columns in landscape */
+    min-width: auto;
+  }
+}
+
+/* Adjust background image for different screens */
+@media screen and (max-width: 768px) {
+  body {
+    background-size: auto 100%;
+    background-position: center top;
+  }
+}
+
+/* Print styles */
+@media print {
+  body {
+    background-image: none;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .window {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #000;
+  }
 }
