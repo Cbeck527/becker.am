@@ -1,15 +1,22 @@
 html {
-  overscroll-behavior: none;
+  height: 100%;
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-image: url("bliss.jpg");
+  padding-top: env(safe-area-inset-top);
+  padding-right: env(safe-area-inset-right);
+  padding-bottom: env(safe-area-inset-bottom);
+  padding-left: env(safe-area-inset-left);
+  min-height: 100%;
+  height: 100%;
+  background-image: url("../assets/bliss.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 main {
@@ -39,18 +46,17 @@ img.smaller {
   height: auto;
 }
 
-
-img.medium{
+img.medium {
   width: 700px;
   height: auto;
 }
 
-img.large{
+img.large {
   width: 80%;
   height: auto;
 }
 
-img.full{
+img.full {
   width: 100%;
   height: auto;
 }
@@ -83,6 +89,25 @@ img.full{
 
 /* Mobile devices */
 @media screen and (max-width: 768px) {
+  body:before {
+    content: "";
+    position: fixed;
+    top: -env(safe-area-inset-top); /* Extend upward into the status bar area */
+    height: calc(100% + env(safe-area-inset-top));
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../assets/bliss.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  body {
+    background: none; /* Remove the background from the body */
+  }
+
   main {
     margin: 10px; /* Minimal margins on mobile */
     gap: 8px; /* Reduce gap between windows */
@@ -109,11 +134,6 @@ img.full{
 
   p {
     max-width: 100%; /* Allow text to fill width on mobile */
-  }
-
-  /* Adjust font sizes for better mobile reading */
-  body {
-    font-size: 14px;
   }
 
   h1 {
