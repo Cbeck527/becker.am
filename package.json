@@ -10,25 +10,17 @@
   },
   "homepage": "https://github.com/Cbeck527/becker.am#readme",
   "scripts": {
-    "dev": "parcel src/*.html src/**/index.html --open",
-
-    "build": "parcel build src/*.html src/**/index.html --no-source-maps",
-    "prebuild": "npm run clean",
-
-    "preview": "npx serve dist",
-    "prepreview": "npm run build",
-
-    "clean": "rm -rf dist .cache .parcel-cache"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "staticFiles": {
-    "staticPath": "vendor"
+  "dependencies": {
+    "astro": "^5.4.1",
+    "xp.css": "^0.2.6"
   },
-  "parcelIgnore": [
-    "XP.css"
-  ],
   "devDependencies": {
-    "parcel": "^2.13.3",
-    "parcel-reporter-static-files-copy": "^1.5.3",
-    "parcel-resolver-ignore": "^2.2.0"
+    "prettier": "^3.5.3",
+    "prettier-plugin-astro": "^0.14.1"
   }
 }
