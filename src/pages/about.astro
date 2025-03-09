@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Window from "../components/Window.astro";
+
+import { Image } from "astro:assets";
+import cbwa from "../assets/cbwa.png";
 ---
 
 <Layout>
@@ -166,7 +169,7 @@ import Window from "../components/Window.astro";
     </Window>
     <div class="right-column">
         <Window title="chris_becker.gif" width="400px">
-            <img src="/cbwa.png" alt="1998-style word art that says Chris Becker" />
+            <Image src={cbwa} alt="1998-style word art that says Chris Becker" format="gif" />
         </Window>
         <Window title="bio.exe" width="450px">
             <p>Hey There—</p>

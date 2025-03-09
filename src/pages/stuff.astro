@@ -2,6 +2,12 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Window from "../components/Window.astro";
+
+import { Image } from "astro:assets";
+import ismytrainfucked from "../assets/projects/ismytrainfucked.png";
+import rabbitsay from "../assets/projects/rabbitsay.png";
+import dishes from "../assets/projects/dishes.png";
+import controlc from "../assets/projects/controlc.png";
 ---
 
 <Layout>
@@ -17,7 +23,7 @@ import Window from "../components/Window.astro";
             <br />
             Python, Lambda, S3
         </p>
-        <img src="/projects/ismytrainfucked.png" />
+        <Image src={ismytrainfucked} alt="" />
     </Window>
     <Window title="rabbitsay.exe">
         <p>
@@ -25,24 +31,25 @@ import Window from "../components/Window.astro";
             <br />
             Python
         </p>
-        <img src="/projects/rabbitsay.png" />
+        <Image src={rabbitsay} alt="" />
     </Window>
-    <Window title="the_dishwasher.exe">
-        <h4>The Dishwasher</h4>
-        <p>
-            <a href="http://www.dishes.io">dishes.io</a>
-            <br />
-            Python, AWS Alexa
-        </p>
-        <img src="/projects/dishes.png" />
-    </Window>
-    <Window title="control-c.exe">
-        <h4>ControlC.fm</h4>
-        <p>
-            <a href="http://www.controlc.fm">controlc.fm</a>
-            <br />
-            Logic Pro X
-        </p>
-        <img src="/projects/controlc.png" />
+        <Window title="the_dishwasher.exe">
+            <h4>The Dishwasher</h4>
+            <p>
+                <a href="http://www.dishes.io">dishes.io</a>
+                <br />
+                Python, AWS Alexa
+            </p>
+            <Image src={dishes} alt="" />
+        </Window>
+        <Window title="control-c.exe">
+            <h4>ControlC.fm</h4>
+            <p>
+                <a href="http://www.controlc.fm">controlc.fm</a>
+                <br />
+                Logic Pro X
+            </p>
+            <Image src={controlc} alt="" />
+        </Window>
     </Window>
 </Layout>

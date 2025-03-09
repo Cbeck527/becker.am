@@ -2,6 +2,13 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Window from "../components/Window.astro";
+
+import { Image } from "astro:assets";
+import hoti from "../assets/talks/history_of_the_internet.png";
+import imtf from "../assets/talks/is_my_train_fucked.png";
+import dishes from "../assets/talks/dishwasher_alexa_meetup.png";
+import fatigue from "../assets/talks/decision_fatigue.png";
+import term from "../assets/talks/theterminalandyou.png";
 ---
 
 <Layout>
@@ -18,12 +25,8 @@ import Window from "../components/Window.astro";
             of this talk as well!
         </p>
         <a target="_blank" href="/talks/history_of_the_internet.pdf"
-            ><img
-                class="full"
-                src="/talks/history_of_the_internet.png"
-                alt="A Brief History of the Internet PDF"
-            /></a
-        >
+            ><Image src={hoti} alt="A Brief History of the Internet PDF" />
+        </a>
     </Window>
     <Window title="">
         <h4>Hack &amp;&amp; Tell</h4>
@@ -40,37 +43,25 @@ import Window from "../components/Window.astro";
             <a target="_blank" href="http://ismytrainfucked.com">IsMyTrainFucked</a>
         </p>
         <a target="_blank" href="/talks/is_my_train_fucked.pdf"
-            ><img
-                class="full"
-                src="/talks/is_my_train_fucked.png"
-                alt="Is My Train Fucked PDF"
-            /></a
+            ><Image src={imtf} alt="Is My Train Fucked PDF" /></a
         >
     </Window>
     <Window title="">
         <h4>Amazon Alexa Meetup - The Dishwasher App</h4>
         <a target="_blank" href="/talks/dishwasher_alexa_meetup.pdf"
-            ><img
-                class="full"
-                src="/talks/dishwasher_alexa_meetup.png"
-                alt="The Dishwasher App PDF"
-            /></a
+            ><Image src={dishes} alt="The Dishwasher App PDF" /></a
         >
     </Window>
     <Window title="">
         <h4>Warby Parker Lightning Talk - Decision Fatigue</h4>
         <a target="_blank" href="/talks/decision_fatigue.pdf"
-            ><img class="full" src="/talks/decision_fatigue.png" alt="Decision Fatigue PDF" /></a
+            ><Image src={fatigue} alt="Decision Fatigue PDF" /></a
         >
     </Window>
     <Window title="">
         <h4>Warby Parker Lightning Talk - The Terminal &amp;&amp; You</h4>
         <a target="_blank" href="https://www.youtube.com/watch?v=JJoFlTDEaV0"
-            ><img
-                class="full"
-                src="/talks/theterminalandyou.png"
-                alt="The Terminal and You, on YouTube"
-            /></a
+            ><Image src={term} alt="The Terminal and You, on YouTube" /></a
         >
     </Window>
 </Layout>
