@@ -17,7 +17,12 @@
             <a href="/stuff"><button>Projects</button></a>
             <a href="/blabbing"><button>Talks</button></a>
             <a href="mailto:chris@becker.am"><button>Email Me</button></a>
-            <a href="/blog"><button disabled>Blog</button></a>
+            <div class="tooltip-container">
+                <a href="/blog"><button disabled>Blog</button></a>
+                <div class="xp-tooltip">
+                    <div class="xp-tooltip-content">Coming soon!</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -32,5 +37,46 @@
     .window-body button {
         width: 120px;
         margin: 4px;
+    }
+
+    /* Tooltip styles */
+    .tooltip-container {
+        position: relative;
+        display: inline-block;
+    }
+
+    .xp-tooltip {
+        visibility: hidden;
+        position: absolute;
+        z-index: 1000;
+        bottom: 125%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        background-color: #ffffe1;
+        border: 1px solid #000;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        font-family: "Arial", sans-serif;
+        font-size: 11px;
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none;
+    }
+    .tooltip-container:hover .xp-tooltip {
+        visibility: visible;
+        opacity: 1;
+    }
+    .xp-tooltip::after {
+        content: "";
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        margin-left: -5px;
+        border-width: 5px;
+        border-style: solid;
+        border-color: #ffffe1 transparent transparent transparent;
+    }
+    .xp-tooltip-content {
+        padding: 10px;
     }
 </style>
