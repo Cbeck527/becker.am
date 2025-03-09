@@ -1,0 +1,219 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Nav from "../components/Nav.astro";
+import Window from "../components/Window.astro";
+---
+
+<Layout>
+    <Nav />
+    <Window title="cv.exe" width="600px">
+        <menu role="tablist">
+            <button aria-selected="true" aria-controls="experience"
+                >Experience</button
+            >
+            <button aria-controls="skillz">Skills</button>
+            <button aria-controls="edu">Education</button>
+            <button aria-controls="certs">Certifications</button>
+        </menu>
+        <article role="tabpanel" id="experience">
+            <fieldset>
+                <legend>Ro</legend>
+                <div class="field-row">
+                    <ul>
+                        <li>
+                            Infrastructure Engineer, Staff I
+                            <br />
+                            March 2023 - Present
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Density</legend>
+                <div class="field-row">
+                    <ul>
+                        <li>
+                            Staff Infrastructure Engineer
+                            <br />
+                            March 2021 - March 2023
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Betterment</legend>
+                <div class="field-row">
+                    <ul>
+                        <li>
+                            Team Lead, Site Reliability Engineering
+                            <br />
+                            April 2020 - March 2021
+                        </li>
+                        <li>
+                            Senior Site Reliability Engineer
+                            <br />
+                            January 2018 - April 2020
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Warby Parker</legend>
+                <div class="field-row">
+                    <ul>
+                        <li>
+                            Infrastructure Engineer
+                            <br />
+                            July 2013 - January 2018
+                        </li>
+                    </ul>
+                </div>
+            </fieldset>
+        </article>
+        <article role="tabpanel" hidden id="skillz">
+            <fieldset>
+                <legend>Platforms</legend>
+                <div class="field-row">
+                    <ul class="tree-view">
+                        <li>AWS</li>
+                        <li>Kubernetes</li>
+                        <ul><li>EKS</li></ul>
+                        <li>Docker</li>
+                        <li>ECS</li>
+                        <li>
+                            Networking
+                            <ul>
+                                <li>Cilium</li>
+                                <li>Calico</li>
+                            </ul>
+                        </li>
+                        <li>Postgres</li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Linux</legend>
+                <div class="field-row">
+                    <ul class="tree-view">
+                        <li>Ubuntu</li>
+                        <li>Amazon Linux (AL2023, AL2)</li>
+                        <li>CentOS</li>
+                        <li>Flatcar</li>
+                        <li>systemd</li>
+                        <li>Bash</li>
+                        <li>Make</li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>DevOps</legend>
+                <div class="field-row">
+                    <ul class="tree-view">
+                        <li>Git, Github Actions, CircleCI</li>
+                        <li>Terraform, Pulumi</li>
+                        <li>ChatOps/Slack APIs</li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Observability</legend>
+                <div class="field-row">
+                    <ul class="tree-view">
+                        <li>Datadog</li>
+                        <li>Vector</li>
+                        <li>Grafana</li>
+                        <li>OpenTelemetry</li>
+                    </ul>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Languages</legend>
+                <div class="field-row">
+                    <ul class="tree-view">
+                        <li>Golang</li>
+                        <li>Python</li>
+                        <li>Rust</li>
+                        <li>Jenkinsfile (Groovy)</li>
+                        <li>Javascript/TypeScript</li>
+                    </ul>
+                </div>
+            </fieldset>
+        </article>
+        <article role="tabpanel" hidden id="certs">
+            <fieldset>
+                <legend>Amazon Web Services</legend>
+                <div class="field-row">
+                    <ul>
+                        <li>Solutions Architect— Associate</li>
+                        <li>SysOps Administrator— Associate</li>
+                    </ul>
+                </div>
+            </fieldset>
+        </article>
+        <article role="tabpanel" hidden id="edu">
+            <fieldset>
+                <legend>Syracuse University</legend>
+                <div class="field-row">
+                    <ul>
+                        <li>B.S., Information Management & Technology</li>
+                    </ul>
+                </div>
+            </fieldset>
+        </article>
+        <section class="field-row" style="justify-content: flex-end">
+            <a target="_blank" href="/chris-becker-resume-2025-03-08.pdf"
+                ><button>Download Resume</button></a
+            >
+        </section>
+    </Window>
+    <div class="right-column">
+        <Window title="chris_becker.gif" width="400px">
+            <img
+                src="/cbwa.png"
+                alt="1998-style word art that says Chris Becker"
+            />
+        </Window>
+        <Window title="bio.exe" width="450px">
+            <p>Hey There—</p>
+            <p>
+                I'm currently a Staff Infrastructure Engineer at <a
+                    href="https://ro.co">Ro</a
+                >.
+            </p>
+            <p>
+                After finishing my undergraduate degree at Syracuse University
+                in 2013 I moved to New York City to start my career in
+                technology. Currently I'm a member of a small team that manages
+                the development infrastructure, cloud instances, and dev tooling
+                at Ro.
+            </p>
+            <p>
+                In my personal time, I like to take photos, build silly and
+                profane apps, and give talks at local meetups.
+            </p>
+            <p>
+                I enjoy working on passionate teams and breathing life into
+                wacky ideas. I love to combine technical and creative minds to
+                see what can be built.
+            </p>
+        </Window>
+    </div>
+</Layout>
+
+<style>
+    ul.tree-view {
+        width: 100%;
+    }
+    .cv {
+        height: 400px;
+        overflow-y: scroll;
+    }
+    .left-column {
+        align-self: start;
+    }
+    .right-column {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+</style>

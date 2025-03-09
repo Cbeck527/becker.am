@@ -1,23 +1,82 @@
 ---
+// Usage: <Window title="Title" width="500px" >
+
 interface Props {
     title: string;
+    width?: string;
+    height?: string;
+    statusBar?: string;
+    scrollable?: string;
 }
 
-const { title} = Astro.props;
-
-// Usage: <Window title="Title" >
+const { title, width = "auto", height = "auto", scrollable } = Astro.props;
 ---
 
 <div class="window">
     <div class="title-bar">
         <div class="title-bar-text">{title}</div>
         <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
             <button aria-label="Close"></button>
         </div>
     </div>
-    <div class="window-body">
+    <div class:list={["window-body", { scrollable: scrollable }]}>
         <slot />
     </div>
+    <slot name="statusBar" />
 </div>
+
+<style define:vars={{ width, height }}>
+    /* fit images into their box */
+    .window-body :global(img) {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .window {
+        height: fit-content;
+        width: fit-content;
+    }
+    .window-body {
+        width: var(--width);
+        height: var(--height);
+    }
+</style>
+
+<script>
+    const tabs = document.querySelectorAll("menu[role=tablist]");
+
+    for (let i = 0; i < tabs.length; i++) {
+        const tab = tabs[i];
+
+        const tabButtons = tab.querySelectorAll("menu[role=tablist] > button");
+
+        tabButtons.forEach((btn) =>
+            btn.addEventListener("click", (e) => {
+                e.preventDefault();
+
+                tabButtons.forEach((button) => {
+                    if (
+                        button.getAttribute("aria-controls") ===
+                        e.target.getAttribute("aria-controls")
+                    ) {
+                        button.setAttribute("aria-selected", true);
+                        openTab(e, tab);
+                    } else {
+                        button.setAttribute("aria-selected", false);
+                    }
+                });
+            }),
+        );
+    }
+
+    function openTab(event, tab) {
+        const articles = tab.parentNode.querySelectorAll('[role="tabpanel"]');
+        articles.forEach((p) => {
+            p.setAttribute("hidden", true);
+        });
+        const article = tab.parentNode.querySelector(
+            `[role="tabpanel"]#${event.target.getAttribute("aria-controls")}`,
+        );
+        article.removeAttribute("hidden");
+    }
+</script>

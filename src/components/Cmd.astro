@@ -1,23 +1,13 @@
 ---
+import Window from "./Window.astro";
+interface Props {
+    title?: string;
+    width?: string;
+}
 
+const { title = "Command Prompt", width = "700px" } = Astro.props;
 ---
 
-<div class="window" id="cmd">
-    <div class="title-bar">
-        <div class="title-bar-text">Command Prompt</div>
-        <div class="title-bar-controls">
-            <button aria-label="Minimize"></button>
-            <button aria-label="Maximize"></button>
-            <button aria-label="Close"></button>
-        </div>
-    </div>
-    <div class="window-body">
-        <slot />
-        </div>
-</div>
-
-<style>
-    #cmd {
-        width: 700px;
-    }
-</style>
+<Window title=`${title}` width=`${width}`>
+    <slot />
+</Window>
