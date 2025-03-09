@@ -2,26 +2,37 @@
 import Layout from "../layouts/Layout.astro";
 import Nav from "../components/Nav.astro";
 import Window from "../components/Window.astro";
+import { Image } from "astro:assets";
+
+import image1 from "../assets/photos/42740014.jpg";
+import image2 from "../assets/photos/31710024.jpg";
+import image3 from "../assets/photos/MG_5236.jpg";
+import image4 from "../assets/photos/MG_6238.jpg";
+import image5 from "../assets/photos/MG_6372-1.jpg";
+import image6 from "../assets/photos/MG_6712.jpg";
 ---
 
 <Layout>
     <Nav />
     <Window title="42740014.jpg">
-        <img src="/photos/42740014.jpg" />
+    <Image src={image1} alt="Adam and Jesse at Red Rock Canyon" priority={true} />
     </Window>
     <Window title="31710024.jpg">
-        <img src="/photos/31710024.jpg" />
+        <Image src={image2} alt="Silhouette of person with surfboard at sunset" />
     </Window>
     <Window title="MG_5236.jpg">
-        <img src="/photos/MG_5236.jpg" />
+        <Image src={image3} alt="A fixed gear bike wheel" />
     </Window>
     <Window title="MG_6238.jpg">
-        <img src="/photos/MG_6238.jpg" />
+        <Image
+            src={image4}
+            alt="Studio portrait of Sam Morrison (@SamTheCobra) at Syracuse University"
+        />
     </Window>
     <Window title="MG_6372-1.jpg">
-        <img src="/photos/MG_6372-1.jpg" />
+        <Image src={image5} alt="Vines on the side of Hendricks Chapel at Syracuse University" />
     </Window>
     <Window title="MG_6712.jpg">
-        <img src="/photos/MG_6712.jpg" />
+        <Image src={image6} alt="The sun peaking through the woods on a hike in Ithaca, NY" />
     </Window>
 </Layout>
